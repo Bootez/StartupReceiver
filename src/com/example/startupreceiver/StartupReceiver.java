@@ -10,7 +10,7 @@ public class StartupReceiver extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
         Intent i = new Intent(context, MainActivity.class);
         i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        //Send i to OS
+        //Send intent to OS
         context.startActivity(i);
     }
 
